@@ -1,10 +1,10 @@
 # lifelong-object-recognition-challenge
 This is a PyTorch implementation of baseline model of IROS2019 lifelong object recognition challenge ([link](https://lifelong-robotic-vision.github.io/competition/Object-Recognition.html)).
 This repository provides:
-* MobileNetV2 [[2](##References)]  backbone for the task:
+* MobileNetV2 [[1](##References)]  backbone for the task:
   * input size: Using random crop for input images
 * Pretrained models for specific batches: 
-  * Training schemes: Two training methods (naive and cumulative) using backbone model are provided. Detailed definition of these two schemes are included in this  paper [[1](##References)].
+  * Training schemes: Two training methods (naive and cumulative) using backbone model are provided. Detailed definition of these two schemes are included in this  paper [[2](##References)].
   * Hyperparameters: We set 50 epochs for training and 30 epochs for finetuning each task with `learning_rate = 0.01`, `momentum=0.9`, `weight_decay=5e-4`,`batch_size=16`. 
   * Model files: Note that models after batch 3 and batch 5 for multitask (cumulative) training scheme (named `model_1.pth` and `model_2.pth`), model after batch 9 for finetuning (naive) scheme (named `model_3.pth`) are provided under `/model`. 
   * To run model: Feel free to load specific model in `evaluate.py`.
@@ -44,8 +44,9 @@ python3 evaluate.py testset_path output_path
 
 ## References
 
-[1] Sandler, Mark, et al. "Mobilenetv2: Inverted residuals and linear bottlenecks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018. [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf)]
+[1] Lomonaco, Vincenzo, and Davide Maltoni. "CORe50: a New Dataset and Benchmark for Continuous Object Recognition." Conference on Robot Learning. 2017. [[pdf](https://arxiv.org/pdf/1705.03550)]
 
-[2] Lomonaco, Vincenzo, and Davide Maltoni. "CORe50: a New Dataset and Benchmark for Continuous Object Recognition." Conference on Robot Learning. 2017. [[pdf](https://arxiv.org/pdf/1705.03550)]
+[2] Sandler, Mark, et al. "Mobilenetv2: Inverted residuals and linear bottlenecks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018. [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf)]
+
 
 
