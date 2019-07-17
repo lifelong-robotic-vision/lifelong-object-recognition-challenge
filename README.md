@@ -44,9 +44,10 @@ python3 evaluate.py testset_path output_path
 
 ## References
 
-[1] Lomonaco, Vincenzo, and Davide Maltoni. "CORe50: a New Dataset and Benchmark for Continuous Object Recognition." Conference on Robot Learning. 2017. [[pdf](https://arxiv.org/pdf/1705.03550)]
+[1] Sandler, Mark, et al. "Mobilenetv2: Inverted residuals and linear bottlenecks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018. [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf)]
 
-[2] Sandler, Mark, et al. "Mobilenetv2: Inverted residuals and linear bottlenecks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018. [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.pdf)]
+[2] Lomonaco, Vincenzo, and Davide Maltoni. "CORe50: a New Dataset and Benchmark for Continuous Object Recognition." Conference on Robot Learning. 2017. [[pdf](https://arxiv.org/pdf/1705.03550)]
+
 
 
 
